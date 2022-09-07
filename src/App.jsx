@@ -23,7 +23,7 @@ function App() {
 
   // local storage
   useEffect(() => {
-    localStorage.getItem("tareas", JSON.stringify(tareas));
+    localStorage.setItem("tareas", JSON.stringify(tareas));
   }, [tareas]);
 
   //eliminar tareas
